@@ -15,8 +15,12 @@
     <title>@yield("title")</title>
 </head>
 <body>
-    <div id="app">
-        @yield("content")
+    <div id="app" class="d-flex flex-column min-vh-100">
+        @include('partials.navbar')
+        <main class="flex-grow-1 py-2">
+            @yield("content")
+        </main>
+        @include('partials.footer')
     </div>
 </body>
 </html>
