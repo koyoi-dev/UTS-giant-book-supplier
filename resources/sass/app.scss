@@ -1,14 +1,40 @@
 // Bootstrap
+@import "~@fontsource/poppins/index.css";
+@import "~@fontsource/poppins/500.css";
+@import "~@fontsource/poppins/600.css";
+@import "~@fontsource/poppins/700.css";
+@import "~@fontsource/poppins/800.css";
+@import "~@fontsource/poppins/900.css";
+
+@import "~@fontsource/roboto/index.css";
+@import "~@fontsource/roboto/300.css";
+@import "~@fontsource/roboto/500.css";
+@import "~@fontsource/roboto/700.css";
+
 $white: #ffffff;
 
 $theme-colors: (
-    "light":      #dbe5ed,
-    "dark":       #000142,
-    "primary":    #403f49,
-    "secondary":  #cf3755,
-    "info":       #cd9745,
-    "success":    #25a264,
-    "warning":    #e0cb26,
-    "danger":     #ec2813,
+    "light": #dbe5ed,
+    "dark": #000142,
+    "primary": #403f49,
+    "secondary": #cf3755,
+    "info": #cd9745,
+    "success": #25a264,
+    "warning": #e0cb26,
+    "danger": #ec2813,
 );
+
+$headings-font-family: Poppins,
+system-ui,
+sans-serif,
+    // Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$font-family-sans-serif: Roboto,
+system-ui,
+sans-serif,
+    // Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$enable-rounded: false;
 @import '~bootstrap/scss/bootstrap';

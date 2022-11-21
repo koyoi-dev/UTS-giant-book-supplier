@@ -3,6 +3,8 @@ window._ = require('lodash');
 try {
     window.Popper = require('@popperjs/core');
     window.bootstrap = require('bootstrap');
+    window.feather = require('feather-icons');
+    feather.replace();
 } catch (e) {
     console.error(e);
 }
