@@ -12,7 +12,7 @@ class BookController extends Controller
      */
     public function index()
     {
-        $books = Book::all();
+        $books = Book::query()->paginate(12);
         return view("home", [
             "books" => $books
         ]);

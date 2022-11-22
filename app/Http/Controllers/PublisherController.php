@@ -11,7 +11,7 @@ class PublisherController extends Controller
      */
     public function index()
     {
-        $publishers = Publisher::all();
+        $publishers = Publisher::query()->paginate(12);
         return view("list-publisher", [
             "publishers" => $publishers
         ]);

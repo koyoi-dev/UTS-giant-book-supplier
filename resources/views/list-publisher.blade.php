@@ -22,5 +22,9 @@
                 <p>Empty...</p>
             @endforelse
         </div>
+
+        <div class="mt-4">
+            {{ $publishers->links() }}
+        </div>
     </div>
 @endsection
