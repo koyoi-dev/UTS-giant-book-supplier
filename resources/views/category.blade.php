@@ -1,12 +1,12 @@
 @extends("layouts.app")
 
-@section("title", "Home Page")
+@section("title", "Category | " . $category->name)
 
 @section("content")
     <div class="container py-4">
-        <h1 class="fw-bold display-4 mb-4">Book List</h1>
+        <h1 class="fw-bold display-4 mb-4">{{ $category->name }}</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-3">
-            @forelse($books as $book)
+            @forelse($category->books as $book)
                 <div class="col">
                     <div class="card pt-2">
                         <div class="card-img-top"

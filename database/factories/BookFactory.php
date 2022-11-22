@@ -18,7 +18,7 @@ class BookFactory extends Factory
             "author" => $this->faker->name,
             "year" => $this->faker->year('year'),
             "synopsis" => $this->faker->paragraphs(3, true),
-            "image" => $this->faker->imageUrl("250", "250")
+            "image" => $this->faker->imageUrl("1000", "1000")
         ];
     }
 }

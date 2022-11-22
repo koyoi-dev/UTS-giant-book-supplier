@@ -12,17 +12,17 @@
                        href="{{ route("home") }}">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
+                    <span class="nav-link dropdown-toggle {{  Route::is("category.show") ? "active" : "" }}"
+                          role="button" data-bs-toggle="dropdown">
                         Category
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </span>
+                    <ul class="dropdown-menu rounded-1 p-2 shadow" style="min-width: 220px;">
+                        @forelse($categories as $category)
+                            <li>
+                                <a class="dropdown-item rounded-2"
+                                   href="{{ route("category.show", $category->id) }}">{{ $category->name }}</a></li>
+                        @empty
+                        @endforelse
                     </ul>
                 </li>
                 <li class="nav-item">

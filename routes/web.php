@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name("home");
+Route::get('/', [BookController::class, 'index'])->name("home");
+Route::get("/book/{book}", [BookController::class, 'show'])->name("book.show");
+Route::get("/category/{category}", [CategoryController::class, 'show'])->name("category.show");
 
 Route::get('/contact', ContactController::class)->name("contact");

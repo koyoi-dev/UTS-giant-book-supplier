@@ -38,3 +38,7 @@ sans-serif,
 
 $enable-rounded: false;
 @import '~bootstrap/scss/bootstrap';
+
+.font-base {
+    font-family: Roboto, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
