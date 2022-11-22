@@ -26,7 +26,8 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Publisher</a>
+                    <a class="nav-link {{  Route::is("publisher.index") ? "active" : "" }}"
+                       href="{{ route("publisher.index") }}">Publisher</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Route::is("contact") ? "active" : "" }}"
