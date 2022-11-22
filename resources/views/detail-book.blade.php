@@ -54,6 +54,7 @@
                                 <i data-feather="tag" class="me-1" style="width: 16px; height: 16px"></i> {{ $category->name }}
                             </span>
                         @empty
+                            <p>Empty...</p>
                         @endforelse
                     </div>
                 </div>

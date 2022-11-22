@@ -22,6 +22,7 @@
                                 <a class="dropdown-item rounded-2"
                                    href="{{ route("category.show", $category->id) }}">{{ $category->name }}</a></li>
                         @empty
+                            <li>Empty...</li>
                         @endforelse
                     </ul>
                 </li>

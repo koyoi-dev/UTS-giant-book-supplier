@@ -19,6 +19,7 @@
                     </div>
                 </div>
             @empty
+                <p>Empty...</p>
             @endforelse
         </div>
     </div>
