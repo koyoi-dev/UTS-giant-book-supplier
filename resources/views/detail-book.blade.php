@@ -13,7 +13,7 @@
 
         <div class="row mt-3">
             <div class="col-md-6">
-                <img src="{{ $book->image }}" alt="..." class="img-fluid rounded-1"/>
+                <img src="{{ $book->image }}" alt="{{ $book->title }}" class="img-fluid rounded-1"/>
             </div>
             <div class="col mt-2">
 
